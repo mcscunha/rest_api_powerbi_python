@@ -1,0 +1,64 @@
+# Iniciar o repositorio local - Pode ser em um diretorio vazio ou com arquivos
+git init
+git status
+git add .
+git commit -m "Primeiro commit"
+
+# Abrir o local onde deseja-se enviar os arquivos versionados, por exemplo,
+# Github, Bitbucket... E criar o repositorio
+
+# Copiar o endereco HTTPS
+
+# Em <NomeDoRemote> pode ser qq apelido que desejar para este repositorio remoto
+# geralmente é ORIGIN
+git remote add <NomeDoRemote> <EnderecoHTTPSCopiado>
+
+# Considerando q o apelido para seu repositorio remoto é: ORIGIN
+# e com a intencao de enviar os arquivos de sua maquina local para
+# o remoto, execute:
+git push -u origin master
+
+# Se aparecer o erro:
+#   ! [rejected]        master -> master (fetch first)
+#   error: failed to push some refs to 'https://github.com/mcscunha/PadraoProjeto_PubSub.git'
+#   hint: Updates were rejected because the remote contains work that you do
+#   hint: not have locally. This is usually caused by another repository pushing
+#   hint: to the same ref. You may want to first integrate the remote changes
+#   hint: (e.g., 'git pull ...') before pushing again.
+#   hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+# Entao, deve-se executar um REBASE (fast-forward)
+git pull origin master --rebase
+git push -u origin master
+
+
+# Se der problema de MERGE, execute os passos:
+
+# Executar apenas uma vez, ao instalar a ferramenta GIT no micro
+	# Este comando edita as configuracoes do GIT para usar o Code como editor
+	git config --global core.editor "code --wait" 
+
+	# Edite as configuracoes colocando o Code como ferramenta de MERGE
+	[merge]
+		tool = vscode
+	[mergetool "vscode"]
+		cmd = code --wait $MERGED
+	[diff]
+		tool = vscode
+	[difftool "vscode"]
+		cmd = code --wait --diff
+	# Salve o arquivo e volte o prompt de comando
+
+# Ja configurado o GIT para usar o Code como ferramenta de MERGE, use:
+git mergetool
+
+# Faca as alteracoes e salve. Para ver se existe mais arquivos em conflito:
+git status 
+
+# Se nao houver mais arquivos a alterar, execute:
+git rebase --continue
+
+# Apague os arquivos adicionais, se forem criados
+rm nome_arquivo_.ext
+
+# Em seguida, envie os arquivos para a nuvem
+git push -u origin master
