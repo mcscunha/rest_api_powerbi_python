@@ -1,0 +1,59 @@
+------------------------------------------------------------------------------
+ApplicationID Schippers : ae8fa8e7-278a-4da5-9662-83d04649e52b
+Meu GroupID             : 1e05f0e3-e24f-4051-b7af-af367548d167
+Meu DataSetID (MySQL)   : 6f1e71b1-7219-4e5c-a0ee-a3d973674ed8
+------------------------------------------------------------------------------
+murilo.cunha01@fatec.sp.gov.br
+ApplicationID           : 99200d72-f21b-4134-a341-812d19de09e0
+                          f8d24f01-7cc4-436a-838b-e648ae5c7c05
+Meu DataSetID           : aa8d1e38-124f-4226-954b-fb6e5f715f63
+Meu ReportID            : 92f29855-822c-4059-86e2-0a2521769f79
+------------------------------------------------------------------------------
+pushadmin@pushapi.onmicrosoft.com
+ApplicationID           : 92d8bfae-23fe-418d-ad46-e38e0f28526d
+ApplicationSecret       : h9Fc.=sSLY1e1ZQPkcu0R=jSzBpe?t7d
+Meu DataSetID           : d4bb7371-dd64-498a-999f-6b75413fde78
+Meu ReportID            : 
+------------------------------------------------------------------------------
+REST API PowerBI - Postman
+tenant_id = '4b4fe5f9-ab33-4561-9e1e-eabc7198cabd'
+client_id = '79a709dd-4d4a-4d6c-96f4-b4d32c1a2394'
+client_sec = 'V9O=bl0riD08fsIt:n=@d0yQCpGUt/85'
+subscription_id = '78972206-e411-4250-a8a6-c03b6035a352'
+Azure_Diagnostics.postman_collection.json = https://raw.githubusercontent.com/hhazeley/Azure-Postman/master/Azure_Diagnostics.postman_collection.json
+Azure_Management.postman_collection.json = https://raw.githubusercontent.com/hhazeley/Azure-Postman/master/Azure_Management.postman_collection.json
+
+Fonte: https://www.youtube.com/watch?v=2bfgeBKRxl4
+Fonte GitHub: https://github.com/hhazeley/Azure-Postman
+------------------------------------------------------------------------------
+
+
+
+
+
+https://api.powerbi.com/beta/8fb52b1b-8117-4138-a959-10c253c69a80/datasets/d4bb7371-dd64-498a-999f-6b75413fde78/rows?noSignUpCheck=1&refreshAccessToken=true&key=SoG51RZ7OQXNgcuE6WPrVZAiaPvdpfYGg0VumioqwlB88H9H7y2uYHetoUSMA3neHAenxm8whS6NDzKyZapZeQ%3D%3D
+
+
+
+Linguagem M - Colocar filtro de data em uma API 
+https://community.powerbi.com/t5/Desktop/Dynamic-connection-to-Web-URL/m-p/346607#M155589
+------------------------------------------------------------------------------
+
+
+https://login.microsoftonline.com/:tenant/oauth2/authorize?client_id=:clientid&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A12345&response_mode=query&resource=:resource&state=12345
+
+client_id:7f59a773-2eaf-429c-a059-50fc5bb28b44
+redirect_uri:https%3A%2F%2Ftoken.docs.microsoft.com%2Fsignin-oidc
+resource:https%3A%2F%2Fmanagement.core.windows.net%2F
+response_type:code id_token
+scope:openid profile
+response_mode:form_post
+nonce:637208385868372805.Y2E3ZmRmMDctMmJiYS00NDI2LWI5OGMtYzE5NGU1OTRiZWNlN2Y0NzE4NzktNzViOC00YmRiLWJiN2YtZmUyZmM5MWZmY2E5
+login_hint:admin@bitask.onmicrosoft.com
+state:CfDJ8NFch36LmiRNgCR7oHo-52OB6vYN1HuppsZulZSmZjH9mw10Eq3iM_uaVQnqt3g_MyigVVr4O5Hzp9uN9iyOsMhJ63vBS-ZnPmFc5yEkIA6eHCM14OBmpd_KJYw05KlO8mp8CB8VQ2OeoHCfrOlfjLz48kzo3xWkiethBArIYTM-yIR1PEPQWvYHHoStII17U3Qj1Ec377EVhPpD-_ZER6RzGf3o3D-nuR_MnTPfHJAJYHdBHMAuoIxXenywcJU5VkF9PWGL4L0nttG4dW04iiNMuM3QbfXcsP3ot4LMZxnqUDxTUIHqb57mvelP4w3LEXNM_LV8Ohnxey02aZZQAd9GKjKi7qcSxhCfdbQfcIwAQumi1x3X0jgoxNSZsjHi8ilpzU7xKF8NLb6QhJhDsdw1CnLi57G_8DZwdwqulL_NzSYqZf2plE-VlfjYvsdthg
+x-client-SKU:ID_NET
+x-client-ver:2.1.4.0
+
+
+
+
